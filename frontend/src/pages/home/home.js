@@ -1,22 +1,26 @@
-import { Box, Grid } from '@mui/joy'
+import { Box, Grid, Typography } from '@mui/joy'
 import React from 'react'
-import NavBar from '../../components/navBar/navBar'
-import BigScreenCard from '../../components/productComponents/bigScreenProductCard/bigScreenCard'
-import ImageSlider from '../../components/homeComponents/imageSlider'
-import MarqueeComponent from '../../components/homeComponents/marqueeComponent'
+import NavBar from '../navBar/navBar';
+import image from '../../assets/heroBannerParallax/4cee125f2dd11ce6309121c3d3edf2eb.jpg'
+import CatModal from '../../components/categoryComponents/catModal';
+import LoginModal from '../../components/loginComponent/loginModal';
+import HeroPicParallax from '../../components/homeComponents/heroPicParallax';
+
 
 const Home = () => {
     return (
         <Box >
-            <Box sx={{position:'fixed', width:'100vw', top:0, right:0}}>
+            <Box sx={{ position: 'fixed', width: '100vw', top: 0, right: 0 }}>
                 <NavBar />
             </Box>
-            <Grid sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', mt:15 }} container spacing={3}>
-                <Grid >
-                    <BigScreenCard/>
-                </Grid>
-
-            </Grid>
+            <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+                <HeroPicParallax/>
+            </Box>
+            <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+                <HeroPicParallax/>
+            </Box>
+            <CatModal />
+            <LoginModal/>
         </Box>
     )
 }
