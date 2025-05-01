@@ -13,8 +13,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",
-    "react-nested-dropdown": "^0.0.12",
     "react-scripts": "5.0.1",
+    "simple-parallax-js": "^6.1.1",
     "swiper": "^11.2.6",
     "web-vitals": "^4.2.4"
   },
